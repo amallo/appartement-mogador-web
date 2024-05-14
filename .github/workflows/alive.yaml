@@ -1,15 +1,18 @@
-name: Deploy
-run-name: ${{ github.actor }} Deploy web site 🚀
-on: [push]
+name: Alive
+run-name: ${{ github.actor }} Alive web site 🚀
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
 jobs:
-  Deploy-VPS:
+  Alive-VPS:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v4
       - name: Install SSH client
         run: sudo apt-get install -y openssh-client
       - name: Add SSH key
@@ -18,20 +21,10 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - run: "ssh-keyscan ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts"
 
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: Build app
+      - run: echo "🖥️ The workflow is now ready make new version alive."
+      - name: Alive on VPS
         run: |
-          cd ${{ github.workspace }}
-          npm ci
-          npm run build
-          tar -cvf deploy.tar build/
-      - name: Deploy on VPS
-        run: |
-          cd ${{ github.workspace }}
-          scp -o StrictHostKeyChecking=no -r deploy.tar ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/tmp
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            ./deploy.sh
+            ./alive.sh
           EOF
-
       - run: echo "🍏 This job's status is ${{ job.status }}."
