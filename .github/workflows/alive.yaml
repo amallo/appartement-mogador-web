@@ -1,11 +1,7 @@
 name: Alive
 run-name: ${{ github.actor }} Alive web site 🚀
 on:
-  push:
-    branches:
-      - main
-    tags:
-      - 'v*'
+  workflow_dispatch:
 jobs:
   Alive-VPS:
     runs-on: ubuntu-latest
