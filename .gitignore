@@ -24,3 +24,5 @@ yarn-error.log*
 
 deploy.sh
 node_modules
+
+.DS_Store
