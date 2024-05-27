@@ -13,9 +13,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/current/appartement-mogador-honfleur-web
-            git pull origin main
-            npm ci
+            set -e
+            cd /var/www/current/appartement-mogador-web && \
+            git pull origin main && \
+            npm ci && \
             sudo systemctl reload caddy
         
       - run: echo "🍏 This job's status is ${{ job.status }}."
