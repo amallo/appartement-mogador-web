@@ -27,11 +27,17 @@ jobs:
           npm run build
           tar -cvf deploy.tar dist/
       - name: Deploy on VPS
-        run: |
-          cd ${{ github.workspace }}
-          scp -o StrictHostKeyChecking=no -r deploy.tar ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/tmp
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            ./deploy.sh
-          EOF
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /var/www/current/appartement-mogador-honfleur
+            git pull origin main
+            npm ci
+            sudo systemctl reload caddy
+        
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
