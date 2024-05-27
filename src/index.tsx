@@ -3,6 +3,7 @@ import { render } from 'solid-js/web';
 
 import './index.css';
 import Perspective from './perspective';
+import { BookButton } from './components/book.button';
 
 const root = document.getElementById('perspective');
 
@@ -13,3 +14,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => <Perspective />, root!);
+

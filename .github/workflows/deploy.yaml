@@ -24,8 +24,8 @@ jobs:
         run: |
           cd ${{ github.workspace }}
           npm ci
-          npm run build
-          tar -cvf deploy.tar build/
+          npm run dist
+          tar -cvf deploy.tar dist/
       - name: Deploy on VPS
         run: |
           cd ${{ github.workspace }}
