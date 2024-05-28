@@ -14,6 +14,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            rm -rf /var/www/appartement-mogador-web
-            cp -R /var/www/current/appartement-mogador-web/dist /var/www/appartement-mogador-web
-            sudo systemctl reload caddy
+            rm -rf /var/www/appartement-mogador-web/latest
+            cp -R /var/www/appartement-mogador-web/current/dist /var/www/appartement-mogador-web/latest
+            cd /var/www/appartement-mogador-web/
+            sudo caddy start
+
