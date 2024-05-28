@@ -1,9 +1,11 @@
 import type { Component } from 'solid-js';
 
-import logo from './logo.svg';
-import styles from './App.module.css';
-import { BookButton } from './components/book.button';
 import { PricePanel } from './components/price.panel';
+import { BookButton } from './components/book.button';
+
+import { FaSolidMapLocationDot } from 'solid-icons/fa'
+import { FaSolidRoad } from 'solid-icons/fa'
+import { SiMinutemailer } from 'solid-icons/si'
 
 const App: Component = () => {
   return (
@@ -28,25 +30,7 @@ const App: Component = () => {
 
         <input type="hidden" id="pp_footer_style" name="pp_footer_style" value="2" />
 
-        <a id="close_mobile_menu" href="javascript:;"></a>
 
-        <div class="mobile_menu_wrapper">
-            <div class="mobile_menu_content">
-                <div class="menu-side-mobile-menu-container">
-                    <ul id="mobile_main_menu" class="mobile_main_nav">
-                        <li class="menu-item menu-item-home current-menu-item current_page_item">
-                            <a href="index.html" aria-current="page">Home</a>
-                        </li>
-                        <li class="menu-item"><a href="our-rooms.html">Our Rooms</a></li>
-                        <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                        <li class="menu-item"><a href="contact.html">Contact</a></li>
-                        <li class="menu-item"><a href="blog.html">Blog</a></li>
-                        <li class="menu-item"><a href="explore.html">Explore</a></li>
-                        <li class="menu-item"><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <div id="wrapper" class=" ">
             <div class="header_style_wrapper">
 
@@ -76,7 +60,7 @@ const App: Component = () => {
                                             <div class="menu-main-menu-container">
                                                 <ul id="main_menu" class="nav">
                                                     <li class="menu-item menu-item-home current_page_item current-menu-item"><a href="index.html">Accueil</a></li>
-                                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                                    <li class="menu-item"><a href="#">Contact</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -87,15 +71,6 @@ const App: Component = () => {
 
                             
                             
-                            <div id="logo_right_wrapper">
-                                <div id="logo_right_button">
-                                    <div class="header_client_wrapper">
-                                        <a class="client_login_link" href="javascript:;" title="Login"><span class="ti-lock"></span>Se connecter</a>
-                                    </div>
-
-                                    <a href="javascript:;" id="mobile_nav_icon"><span class="ti-menu"></span></a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,13 +127,7 @@ const App: Component = () => {
                                                                                     lieu idéal pour découvrir avec bonheur les multiples aspects d’un site d’exception.
                                                                                 </p>
                                                                             </h2>
-                                                                            <p class="p1">
-                                                                                <span class="s1">Conçu sur 2 étages, à quelques pas de la place Sainte-Catherine et à une centaine
-                                                                                    de mètres du Vieux Port, l&#39;Appartement Mogador grâce un cadre spacieux et un
-                                                                                    décor d’une authentique qualité est une escale privilégiée autant qu’une
-                                                                                    
-                                                                                    invitation à poursuivre le voyage.</span>
-                                                                            </p>
+                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -288,32 +257,138 @@ const App: Component = () => {
                                             data-element_type="section"
                                             data-settings='{"hoteller_ext_is_background_parallax":"false","hoteller_ext_is_background_on_scroll":"false"}'
                                         >
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div class="elementor-row">
-                                                    <div
-                                                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2467eb2"
-                                                        data-id="2467eb2"
-                                                        data-element_type="column"
-                                                        data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
-                                                    >
-                                                        <div class="elementor-column-wrap elementor-element-populated">
-                                                            <div class="elementor-widget-wrap">
-                                                                <div
-                                                                    class="elementor-element elementor-element-deda4ce elementor-invisible elementor-widget elementor-widget-heading"
-                                                                    data-id="deda4ce"
-                                                                    data-element_type="widget"
-                                                                    data-settings='{"_animation":"fadeInUp","hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
-                                                                    data-widget_type="heading.default"
-                                                                >
+                                            <BookButton/> 
+                                        </section>
+                                        <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-9cf6a23 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                                data-id="9cf6a23"
+                                                data-element_type="section"
+                                                data-settings='{"stretch_section":"section-stretched","hoteller_ext_is_background_parallax":"false","hoteller_ext_is_background_on_scroll":"false"}'
+                                            >
+                                                <div class="elementor-container elementor-column-gap-default">
+                                                    <div class="elementor-row">
+                                                        <div
+                                                            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-26dd55c"
+                                                            data-id="26dd55c"
+                                                            data-element_type="column"
+                                                            data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                        >
+                                                            <div class="elementor-column-wrap elementor-element-populated">
+                                                                <div class="elementor-widget-wrap">
+                                                                    <div
+                                                                        class="elementor-element elementor-element-7abb2fa elementor-widget elementor-widget-eb-google-map-extended"
+                                                                        data-id="7abb2fa"
+                                                                        data-element_type="widget"
+                                                                        data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                                        data-widget_type="eb-google-map-extended.default"
+                                                                    >
+                                                                        <div class="elementor-widget-container">
+                                                          
+                                                                            <iframe style="width:100%; height:500px; border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333511.0598510026!2d-0.09338576710886114!3d49.24770684505864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e033ba25fa5311%3A0x21874957c6412e87!2s21%20Rue%20du%20Puits%2C%2014600%20Honfleur!5e0!3m2!1sen!2sfr!4v1716391793183!5m2!1sen!2sfr" width="600" height="450" ></iframe>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </section>
-                                        
+                                        <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-792a63f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                data-id="792a63f"
+                                                data-element_type="section"
+                                                data-settings='{"hoteller_ext_is_background_parallax":"false","hoteller_ext_is_background_on_scroll":"false"}'
+                                            >
+                                                <div class="elementor-container elementor-column-gap-wide">
+                                                    <div class="elementor-row">
+                                                        <div
+                                                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f75bb7e"
+                                                            data-id="f75bb7e"
+                                                            data-element_type="column"
+                                                            data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                        >
+                                                            <div class="elementor-column-wrap elementor-element-populated">
+                                                                <div class="elementor-widget-wrap">
+                                                                    <div
+                                                                        class="elementor-element elementor-element-b52be93 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="b52be93"
+                                                                        data-element_type="widget"
+                                                                        data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                                        data-widget_type="text-editor.default"
+                                                                    >
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-text-editor elementor-clearfix" style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
+                                                                                <FaSolidMapLocationDot size={40} />
+                                                                                <p>
+                                                                                    <strong>Adresse</strong><br />
+                                                                                    21 Rue du Puits, 14600 Honfleur
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-17e1c83"
+                                                            data-id="17e1c83"
+                                                            data-element_type="column"
+                                                            data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                        >
+                                                            <div class="elementor-column-wrap elementor-element-populated">
+                                                                <div class="elementor-widget-wrap">
+                                                                    <div
+                                                                        class="elementor-element elementor-element-fb0dfa2 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="fb0dfa2"
+                                                                        data-element_type="widget"
+                                                                        data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                                        data-widget_type="text-editor.default"
+                                                                    >
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-text-editor elementor-clearfix" style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
+                                                                                <FaSolidRoad size={40} />
+                                                                                <p>
+                                                                                    <strong>En voiture</strong><br />
+                                                                                    <span class="s1">Direction l'autoroute.</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-17e1c83"
+                                                            data-id="17e1c83"
+                                                            data-element_type="column"
+                                                            data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                        >
+                                                            <div class="elementor-column-wrap elementor-element-populated">
+                                                                <div class="elementor-widget-wrap">
+                                                                    <div
+                                                                        class="elementor-element elementor-element-fb0dfa2 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="fb0dfa2"
+                                                                        data-element_type="widget"
+                                                                        data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
+                                                                        data-widget_type="text-editor.default"
+                                                                    >
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-text-editor elementor-clearfix" style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
+                                                                                <SiMinutemailer size={40} />
+                                                                                <p>
+                                                                                    <strong>Pour me contacter</strong><br />
+                                                                                    <span class="s1"><a href="mailto:contact@appartement-mogador-honfleur.com ">contact@appartement-mogador-honfleur.com </a></span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            
                                     </div>
                                 </div>
                             </div>
