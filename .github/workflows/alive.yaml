@@ -6,21 +6,14 @@ jobs:
   Alive-VPS:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Install SSH client
-        run: sudo apt-get install -y openssh-client
-      - name: Add SSH key
-        uses: webfactory/ssh-agent@v0.5.3
+      - name: Deploy
+        uses: appleboy/ssh-action@master
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - run: "ssh-keyscan ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts"
-
-      - run: echo "🖥️ The workflow is now ready make new version alive."
-      - name: Alive on VPS
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
-            ./alive.sh
-          EOF
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            rm -rf /var/www/appartement-mogador-web
+            cp -R /var/www/current/appartement-mogador-web/dist /var/www/appartement-mogador-web
+            sudo systemctl reload caddy
