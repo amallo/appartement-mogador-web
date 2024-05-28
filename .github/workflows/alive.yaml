@@ -17,5 +17,5 @@ jobs:
             rm -rf /var/www/appartement-mogador-web/latest
             cp -R /var/www/appartement-mogador-web/current/dist /var/www/appartement-mogador-web/latest
             cd /var/www/appartement-mogador-web/
-            sudo caddy start
+            sudo caddy reload
 
