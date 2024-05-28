@@ -256,8 +256,11 @@ const App: Component = () => {
                                             data-id="de407e0"
                                             data-element_type="section"
                                             data-settings='{"hoteller_ext_is_background_parallax":"false","hoteller_ext_is_background_on_scroll":"false"}'
+                                            
                                         >
-                                            <BookButton/> 
+                                            <div style={{display: "flex", flex:1, "flex-direction": "column", "align-items": "center"}}>
+                                                <BookButton/> 
+                                            </div>
                                         </section>
                                         <section
                                                 class="elementor-section elementor-top-section elementor-element elementor-element-9cf6a23 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"

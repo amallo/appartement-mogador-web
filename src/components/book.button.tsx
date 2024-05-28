@@ -1,23 +1,18 @@
 export const BookButton = ()=>{
     return <>
-        <a id="singleroom_book" data-formid="120" href="javascript:;" class="singleroom_book button">RESERVER</a>
+        <a id="singleroom_book" data-formid="120" href="javascript:;" class="button">RESERVER</a>
         <div id="singleroom_book_form120" class="singleroom_book_form">
-            <div class="mphb_sc_booking_form-wrapper">
-                <form method="get"  class="mphb-booking-form" id="booking-form-120">
+            
                     <p class="mphb-required-fields-tip">
                         <small>Required fields are followed by <abbr title="required">*</abbr></small>
                     </p>
-                    <input type="hidden" id="mphb-checkout-nonce" name="mphb-checkout-nonce" value="738b75c68a" />
-                    <input type="hidden" name="_wp_http_referer" value="/hoteller/apartment/accommodation/superior-room/" /> <input type="hidden" name="mphb_room_type_id" value="120" />
                     <p class="mphb-check-in-date-wrapper">
-                        <label for="mphb_check_in_date-6061a2113478d"> Votre nom<abbr title="Votre nom">*</abbr> </label>
-                        <br />
-                        <input id="mphb_check_in_date-6061a2113478d" type="text"  value="" required autocomplete="off" placeholder="" />
+                        <label for="mphb_check_in_date-6061a2113478d"> Votre nom<abbr title="Formatted as dd/mm/yyyy">*</abbr> </label>
+                        <input id="mphb_check_in_date-6061a2113478d" type="text" class="mphb-datepick" value="" required autocomplete="off" />
                     </p>
                     <p class="mphb-check-in-date-wrapper">
-                        <label for="mphb_check_in_date-6061a2113478d"> Votre adresse mail<abbr title="Votre adresse mail">*</abbr> </label>
-                        <br />
-                        <input id="mphb_check_in_date-6061a2113478d" type="text"  value="" required autocomplete="off" placeholder="" />
+                        <label for="mphb_check_in_date-6061a2113478d"> Votre mail<abbr title="Formatted as dd/mm/yyyy">*</abbr> </label>
+                        <input id="mphb_check_in_date-6061a2113478d" type="text" class="mphb-datepick" value="" required autocomplete="off" />
                     </p>
                     <p class="mphb-check-in-date-wrapper">
                         <label for="mphb_check_in_date-6061a2113478d"> Arrivée le<abbr title="Formatted as dd/mm/yyyy">*</abbr> </label>
@@ -33,9 +28,7 @@ export const BookButton = ()=>{
                         <input class="mphb-reserve-btn button" disabled type="submit" value="Envoyer la demande" />
                         <span class="mphb-preloader mphb-hide"></span>
                     </p>
-                    <div class="mphb-errors-wrapper mphb-hide"></div>
-                </form>
-            </div>
+            
         </div>
     </>
 }
