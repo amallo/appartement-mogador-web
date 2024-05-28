@@ -58,10 +58,7 @@ const App: Component = () => {
                                     <div class="nav_wrapper_inner">
                                         <div id="menu_border_wrapper">
                                             <div class="menu-main-menu-container">
-                                                <ul id="main_menu" class="nav">
-                                                    <li class="menu-item menu-item-home current_page_item current-menu-item"><a href="index.html">Accueil</a></li>
-                                                    <li class="menu-item"><a href="#">Contact</a></li>
-                                                </ul>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -99,20 +96,7 @@ const App: Component = () => {
                                                     >
                                                         <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
-                                                                <div
-                                                                    class="elementor-element elementor-element-8e1c27b elementor-widget elementor-widget-heading"
-                                                                    data-id="8e1c27b"
-                                                                    data-element_type="widget"
-                                                                    data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
-                                                                    data-widget_type="heading.default"
-                                                                >
-                                                                    <div class="elementor-widget-container">
-                                                                        <h1 class="elementor-heading-title elementor-size-default">
-                                                                            Appartement Duplex Mogador <br />
-                                                                            Honfleur
-                                                                        </h1>
-                                                                    </div>
-                                                                </div>
+                                                                
                                                                 <div
                                                                     class="elementor-element elementor-element-99909d9 elementor-invisible elementor-widget elementor-widget-text-editor"
                                                                     data-id="99909d9"
