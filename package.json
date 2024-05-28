@@ -6,6 +6,7 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "cp -R ./upload dist && cp -R ./js dist && cp -R ./images dist && cp -R ./icons dist && cp -R ./fonts dist",
     "serve": "vite preview"
   },
   "license": "MIT",
