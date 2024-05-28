@@ -1,6 +1,6 @@
 name: Deploy
 run-name: ${{ github.actor }} Deploy web site 🚀
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   Deploy-VPS:
     runs-on: ubuntu-latest
