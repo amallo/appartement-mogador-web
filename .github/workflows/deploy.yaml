@@ -13,6 +13,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            ls
             cd /var/www/current/appartement-mogador-web 
             git pull origin main 
             npm ci 
