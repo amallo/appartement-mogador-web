@@ -20,6 +20,9 @@
     "vitest": "^1.6.0"
   },
   "dependencies": {
+    "@corvu/popover": "^0.2.0",
+    "@corvu/tooltip": "^0.2.0",
+    "corvu": "^0.7.1",
     "solid-icons": "^1.1.0",
     "solid-js": "^1.8.11"
   },

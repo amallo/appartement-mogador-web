@@ -1,10 +1,12 @@
+
 import { createSignal } from "solid-js";
-import { BookButton } from "./book.button"
 import { TbWashTemperature4 } from 'solid-icons/tb'
 import { FaSolidPlaneArrival } from 'solid-icons/fa'
 import { FaSolidPlaneDeparture } from 'solid-icons/fa'
-import { RiSystemCheckboxBlankCircleFill } from 'solid-icons/ri'
 import { FaSolidAsterisk } from 'solid-icons/fa'
+import { Commodities } from "./commodities";
+import { Level1 } from "./level1";
+import { Level2 } from "./level2";
 
 type SelectedPriceMethod = "night" | "week"
 
@@ -73,30 +75,13 @@ export const PricePanel = ()=>{
                         </p>
                     </div>
                     <div class="singleroom_attributes_wrapper">
-                        <div  style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                            <RiSystemCheckboxBlankCircleFill/>
-                            <span class="singleroom_bed room_attribute">Superficie de 80 m2</span>
+                        110 m² sur 2 niveaux 
+                        <div  style={{display: "flex", flex:0, "flex-direction": "column", gap: "32px"}}>
+                        <Level1 />
+                        <Level2/>
+                        <Commodities/>
                         </div>
-                        <div  style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                            <RiSystemCheckboxBlankCircleFill/>
-                            <span class="singleroom_bed room_attribute">Balcon</span>
-                        </div>
-                        <div style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                            <RiSystemCheckboxBlankCircleFill/>
-                            <span class="singleroom_bed room_attribute">2 chambres  à coucher</span>
-                        </div>
-                        <div style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                            <RiSystemCheckboxBlankCircleFill/>
-                            <span class="singleroom_bed room_attribute">2 salles de bain</span>
-                        </div>
-                        <div style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                            <RiSystemCheckboxBlankCircleFill/>
-                            <span class="singleroom_bed room_attribute">2 toilettes</span>
-                        </div>
-                        <div  style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                            <RiSystemCheckboxBlankCircleFill/>
-                            <span class="singleroom_bed room_attribute">Cuisine équipée</span>
-                        </div>
+                        
                     </div>
                 </div>
             }
