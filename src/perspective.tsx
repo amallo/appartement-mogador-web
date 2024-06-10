@@ -175,12 +175,31 @@ const App: Component = () => {
                                                                             <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
                                                                                 <img
                                                                                     class="tg_horizontal_gallery_cell_img"
+                                                                                    src="upload/bar.jpg"
+                                                                                    data-flickity-lazyload="upload/bar.jpg"
+                                                                                    alt=""
+                                                                                    style="height: 600px;"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
+                                                                                <img
+                                                                                    class="tg_horizontal_gallery_cell_img"
+                                                                                    src="upload/cuisine.jpg"
+                                                                                    data-flickity-lazyload="upload/cuisine.jpg"
+                                                                                    alt=""
+                                                                                    style="height: 600px;"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
+                                                                                <img
+                                                                                    class="tg_horizontal_gallery_cell_img"
                                                                                     src="upload/table.jpg"
                                                                                     data-flickity-lazyload="upload/table.jpg"
                                                                                     alt=""
                                                                                     style="height: 600px;"
                                                                                 />
                                                                             </div>
+
                                                                             <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
                                                                                 <img
                                                                                     class="tg_horizontal_gallery_cell_img"
@@ -193,8 +212,36 @@ const App: Component = () => {
                                                                             <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
                                                                                 <img
                                                                                     class="tg_horizontal_gallery_cell_img"
-                                                                                    src="upload/bar.jpg"
-                                                                                    data-flickity-lazyload="upload/bar.jpg"
+                                                                                    src="upload/palier.jpg"
+                                                                                    data-flickity-lazyload="upload/palier.jpg"
+                                                                                    alt=""
+                                                                                    style="height: 600px;"
+                                                                                />
+                                                                            </div>
+                                                                            
+                                                                            <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
+                                                                                <img
+                                                                                    class="tg_horizontal_gallery_cell_img"
+                                                                                    src="upload/fauteuil.jpg"
+                                                                                    data-flickity-lazyload="upload/fauteuil.jpg"
+                                                                                    alt=""
+                                                                                    style="height: 600px;"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
+                                                                                <img
+                                                                                    class="tg_horizontal_gallery_cell_img"
+                                                                                    src="upload/sdb.jpg"
+                                                                                    data-flickity-lazyload="upload/sdb.jpg"
+                                                                                    alt=""
+                                                                                    style="height: 600px;"
+                                                                                />
+                                                                            </div>
+                                                                            <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
+                                                                                <img
+                                                                                    class="tg_horizontal_gallery_cell_img"
+                                                                                    src="upload/salle_douche.jpg"
+                                                                                    data-flickity-lazyload="upload/salle_douche.jpg"
                                                                                     alt=""
                                                                                     style="height: 600px;"
                                                                                 />
@@ -217,15 +264,7 @@ const App: Component = () => {
                                                                                     style="height: 600px;"
                                                                                 />
                                                                             </div>
-                                                                            <div class="tg_horizontal_gallery_cell" style="margin-right: 0px;">
-                                                                                <img
-                                                                                    class="tg_horizontal_gallery_cell_img"
-                                                                                    src="upload/sdb.jpg"
-                                                                                    data-flickity-lazyload="upload/sdb.jpg"
-                                                                                    alt=""
-                                                                                    style="height: 600px;"
-                                                                                />
-                                                                            </div>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>

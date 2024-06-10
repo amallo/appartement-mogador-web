@@ -1,8 +1,7 @@
 import '@rnwonder/solid-date-picker/dist/style.css'
-import Calendar from "@rnwonder/solid-date-picker/calendar";
 
 import { createSignal } from "solid-js";
-import DatePicker, { DateObjectUnits, PickerValue } from '@rnwonder/solid-date-picker';
+import DatePicker, { PickerValue } from '@rnwonder/solid-date-picker';
 
 
 const format = (value: PickerValue)=>{
