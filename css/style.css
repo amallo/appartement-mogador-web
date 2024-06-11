@@ -353,12 +353,12 @@ Sidebar heading:  12px 'Renner','Helvetica Neue', Arial, Verdana, sans-serif
 #loftloader-wrapper .loader-section {
     opacity: 1;
 }
-            #loftloader-wrapper.pl-imgloading #loader {
-    width: 100px;
+#loftloader-wrapper.pl-imgloading #loader {
+    width: 400px;
 }
 #loftloader-wrapper.pl-imgloading #loader span {
     background-size: cover;
-    background-image: url(../upload/logo.png);
+    background-image: url(../upload/logo_anim.png);
 }
 
 .slideUp2{
