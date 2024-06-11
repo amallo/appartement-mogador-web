@@ -372,34 +372,6 @@ const App: Component = () => {
                                                                     >
                                                                         <div class="elementor-widget-container">
                                                                             <div class="elementor-text-editor elementor-clearfix" style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
-                                                                                <FaSolidRoad size={40} />
-                                                                                <p>
-                                                                                    <strong>En voiture</strong><br />
-                                                                                    <span class="s1">Direction l'autoroute.</span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-17e1c83"
-                                                            data-id="17e1c83"
-                                                            data-element_type="column"
-                                                            data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
-                                                        >
-                                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                                <div class="elementor-widget-wrap">
-                                                                    <div
-                                                                        class="elementor-element elementor-element-fb0dfa2 elementor-widget elementor-widget-text-editor"
-                                                                        data-id="fb0dfa2"
-                                                                        data-element_type="widget"
-                                                                        data-settings='{"hoteller_ext_is_scrollme":"false","hoteller_ext_is_smoove":"false","hoteller_ext_is_parallax_mouse":"false","hoteller_ext_is_infinite":"false","hoteller_ext_is_fadeout_animation":"false"}'
-                                                                        data-widget_type="text-editor.default"
-                                                                    >
-                                                                        <div class="elementor-widget-container">
-                                                                            <div class="elementor-text-editor elementor-clearfix" style={{display: "flex", flex:1, "flex-direction": "row", gap: "16px", "align-items": "center"}}>
                                                                                 <SiMinutemailer size={40} />
                                                                                 <p>
                                                                                     <strong>Pour me contacter</strong><br />
