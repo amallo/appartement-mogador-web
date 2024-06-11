@@ -309,9 +309,8 @@ const App: Component = () => {
                                                                         data-widget_type="eb-google-map-extended.default"
                                                                     >
                                                                         <div class="elementor-widget-container">
-                                                          
-                                                                            <iframe style="width:100%; height:500px; border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333511.0598510026!2d-0.09338576710886114!3d49.24770684505864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e033ba25fa5311%3A0x21874957c6412e87!2s21%20Rue%20du%20Puits%2C%2014600%20Honfleur!5e0!3m2!1sen!2sfr!4v1716391793183!5m2!1sen!2sfr" width="600" height="450" ></iframe>
-                                                                        </div>
+                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.38055573159!2d0.22839457614519998!3d49.42061897141386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e033ba24460ed5%3A0x480c0128699f73b7!2s27%20Rue%20du%20Puits%2C%2014600%20Honfleur!5e0!3m2!1sfr!2sfr!4v1718107291448!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                           </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -347,7 +346,7 @@ const App: Component = () => {
                                                                                 <FaSolidMapLocationDot size={40} />
                                                                                 <p>
                                                                                     <strong>Adresse</strong><br />
-                                                                                    21 Rue du Puits, 14600 Honfleur
+                                                                                    27 Rue du Puits, 14600 Honfleur
                                                                                 </p>
                                                                             </div>
                                                                         </div>

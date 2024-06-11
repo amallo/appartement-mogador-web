@@ -3612,7 +3612,7 @@ body[data-route-option="prev-section"] .c-header-home_subheading.-load, body[dat
 	background-image: none;
 	background-position: 0% 0%;
 	background-repeat: repeat;
-	font-family: 'themify';
+	;
 	content: "\e64b";
 	float: right;
 	margin-left: 8px;
@@ -3791,7 +3791,7 @@ body[data-route-option="prev-section"] .c-header-home_subheading.-load, body[dat
 	background-position: 0% 0%;
 	background-repeat: repeat;
 	margin-top: 0;
-	font-family: 'themify';
+	;
     content: "\e649";
 	float: right;
 	margin-right: 0px;
@@ -4861,7 +4861,7 @@ transform-style: preserve-3d;
 .mphb-customer-country:after,
 .widget_mphb_search_availability_widget .mphb_widget_search-adults:after,
 .widget_mphb_search_availability_widget .mphb_widget_search-children:after {
-    font-family: 'themify';
+    ;
     content: "\e64b";
     display: inline;
     position: absolute;

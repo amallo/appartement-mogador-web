@@ -67,15 +67,10 @@ export const PricePanel = ()=>{
                 <div class="elementor-widget-container">
                     <div class="elementor-text-editor elementor-clearfix">
                         <p class="p1">
-                            <span class="s1">Conçu sur 2 étages, à quelques pas de la place Sainte-Catherine et à une centaine
-                                de mètres du Vieux Port, l&#39;Appartement Mogador grâce un cadre spacieux et un
-                                décor d’une authentique qualité est une escale privilégiée autant qu’une
-                                
-                                invitation à poursuivre le voyage.</span>
+                            <span class="s1">Conçu sur 110 m² sur 2 niveaux, l'Appartement Mogador situé à quelques pas de l'église Ste Catherine et à une centaine de mètres du Vieux Port.</span>
                         </p>
                     </div>
                     <div class="singleroom_attributes_wrapper">
-                        110 m² sur 2 niveaux 
                         <div  style={{display: "flex", flex:0, "flex-direction": "column", gap: "32px"}}>
                         <Level1 />
                         <Level2/>

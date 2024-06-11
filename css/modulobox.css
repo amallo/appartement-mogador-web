@@ -53,7 +53,6 @@
 	pointer-events: none;
 	-webkit-text-size-adjust: 100%;
 	-webkit-backface-visibility: hidden;
-	font-family: Arial, Helvetica, sans-serif;
 	-webkit-transition: opacity .4s ease; /*** prevent issue on old Safari version ***/
 	transition: opacity .4s ease, visibility .4s ease;
 }

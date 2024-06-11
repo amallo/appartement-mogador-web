@@ -30,7 +30,7 @@ export const BookButton = ()=>{
     };
 
     return <>
-        <a id="singleroom_book" data-formid="120" href="javascript:;" class="button" >RESERVER</a>
+        <a id="singleroom_book" data-formid="120" href="javascript:;" class="button" >DEMANDE DE RESERVATION</a>
         <div id="singleroom_book_form120" class="singleroom_book_form">
             
                     <p class="mphb-required-fields-tip">

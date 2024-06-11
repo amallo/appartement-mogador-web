@@ -23,7 +23,7 @@ export const Level1: VoidComponent = () => {
 
       >
         
-        <span style={{color: "black"}} >Voir Niveau 1 (cuisine, repas, salon)</span>
+        <span style={{color: "black"}} >Niveau 1 (cuisine, repas, salon)</span>
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content>

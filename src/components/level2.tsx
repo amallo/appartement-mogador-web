@@ -24,7 +24,7 @@ export const Level2: VoidComponent = () => {
        as="span"
       >
         
-        <span style={{color: "black"}} >Voir Niveau 2 (chambres, salon, salle de bain)</span>
+        <span style={{color: "black"}} >Niveau 2 (chambres, salon, salle de bain)</span>
       </Tooltip.Trigger>
       <Tooltip.Portal>
         <Tooltip.Content >
