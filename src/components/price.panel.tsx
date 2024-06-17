@@ -45,9 +45,11 @@ const PriceCommon= ()=>{
     </div>
 }
 
+type ToolTip = Record<string, boolean>
 export const PricePanel = ()=>{
     const [selectedPriceMethod, selectPriceMethod] = createSignal<SelectedPriceMethod>("night");
     const [selectedMenu, selectMenu] = createSignal<SelectedMenu>("description");
+    const [isOpened, setOpen] = createSignal<ToolTip>({});
     return <div class="elementor-column-wrap elementor-element-populated">
     <div class="elementor-widget-wrap" style={{color: 'white', display: 'flex', flex:1, "flex-direction": 'column'}}>
         <div
@@ -72,9 +74,9 @@ export const PricePanel = ()=>{
                     </div>
                     <div class="singleroom_attributes_wrapper">
                         <div  style={{display: "flex", flex:0, "flex-direction": "column", gap: "32px"}}>
-                        <Level1 />
-                        <Level2/>
-                        <Commodities/>
+                        <Level1 name={"level1"} isOpened={isOpened()["level1"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})} />
+                        <Level2 name={"level2"} isOpened={isOpened()["level2"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})} />
+                        <Commodities name={"commodities"} isOpened={isOpened()["commodities"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})}/>
                         </div>
                         
                     </div>

@@ -2,26 +2,28 @@
 import Tooltip from "@corvu/tooltip"
 import type { VoidComponent } from 'solid-js'
 import './commodities.css'
-import { TbCooker, TbIroning1, TbWindmill } from "solid-icons/tb"
-import { BiSolidWasher } from 'solid-icons/bi'
 import { FaSolidBath, FaSolidBed, FaSolidToilet } from "solid-icons/fa"
 import { FiTv } from "solid-icons/fi"
+import { TooltipProps } from "./tooltip"
 
-export const Level2: VoidComponent = () => {
+export const Level2 = (props: TooltipProps) => {
   return (
     <Tooltip
-
+      open={props.isOpened}
       placement="right"
       openDelay={100}
+      openOnHover={false}
+      closeOnScroll
       hoverableContent={false}
       floatingOptions={{
         offset: 13,
-        flip: true,
-        shift: true,
       }}
     >
       <Tooltip.Trigger
        as="span"
+       onFocusOut={()=>props.onClick(props.name, false)}
+       onclick={() => props.onClick(props.name, !props.isOpened)}
+       onblur={ ()=>props.onClick(props.name, false)}
       >
         
         <span style={{color: "black"}} >Niveau 2 (chambres, salon, salle de bain)</span>

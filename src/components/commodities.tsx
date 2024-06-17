@@ -1,17 +1,19 @@
 
 import Tooltip from "@corvu/tooltip"
-import type { VoidComponent } from 'solid-js'
-import { SiStartrek } from "solid-icons/si"
 import './commodities.css'
 import { TbCooker, TbIroning1, TbToolsKitchen2, TbWindmill } from "solid-icons/tb"
 import { BiSolidCarGarage, BiSolidWasher } from 'solid-icons/bi'
 import { FaSolidBaby } from "solid-icons/fa"
+import { TooltipProps } from "./tooltip"
 
-export const Commodities: VoidComponent = () => {
+export const Commodities = (props: TooltipProps) => {
   return (
     <Tooltip
+      open={props.isOpened}
       placement="right"
       openDelay={100}
+      openOnHover={false}
+      closeOnScroll
       hoverableContent={false}
       floatingOptions={{
         offset: 13,
@@ -19,6 +21,9 @@ export const Commodities: VoidComponent = () => {
     >
       <Tooltip.Trigger
        as="div"
+       onFocusOut={()=>props.onClick(props.name, false)}
+       onclick={() => props.onClick(props.name, !props.isOpened)}
+       onblur={ ()=>props.onClick(props.name, false)}
       >
         
         <span style={{color: "black"}} >Voir les Commodités</span>
