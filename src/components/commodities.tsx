@@ -10,7 +10,7 @@ export const Commodities = (props: TooltipProps) => {
   return (
     <Tooltip
       open={props.isOpened}
-      placement="right"
+      placement={props.isMobile ? "top": "right"}
       openDelay={100}
       openOnHover={false}
       closeOnScroll

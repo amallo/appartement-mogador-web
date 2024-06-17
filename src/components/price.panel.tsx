@@ -45,6 +45,19 @@ const PriceCommon= ()=>{
     </div>
 }
 
+function isMobile() {
+    var check = false;
+    (function(a) {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)) {
+        check = true;
+      }
+    })(navigator.userAgent || navigator.vendor || window.opera);
+    return check;
+}
+function isSmallScreen() {
+    return ( ( window.innerWidth <= 800 ) );
+}
+
 type ToolTip = Record<string, boolean>
 export const PricePanel = ()=>{
     const [selectedPriceMethod, selectPriceMethod] = createSignal<SelectedPriceMethod>("night");
@@ -74,9 +87,9 @@ export const PricePanel = ()=>{
                     </div>
                     <div class="singleroom_attributes_wrapper">
                         <div  style={{display: "flex", flex:0, "flex-direction": "column", gap: "32px"}}>
-                        <Level1 name={"level1"} isOpened={isOpened()["level1"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})} />
-                        <Level2 name={"level2"} isOpened={isOpened()["level2"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})} />
-                        <Commodities name={"commodities"} isOpened={isOpened()["commodities"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})}/>
+                        <Level1 isMobile={isMobile() || isSmallScreen()} name={"level1"} isOpened={isOpened()["level1"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})} />
+                        <Level2 isMobile={isMobile() || isSmallScreen()} name={"level2"} isOpened={isOpened()["level2"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})} />
+                        <Commodities  isMobile={isMobile()|| isSmallScreen()}name={"commodities"} isOpened={isOpened()["commodities"]} onClick={(name, isOpened)=>setOpen({[name]: isOpened})}/>
                         </div>
                         
                     </div>

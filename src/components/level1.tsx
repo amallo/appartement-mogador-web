@@ -1,6 +1,5 @@
 
 import Tooltip from "@corvu/tooltip"
-import { createSignal, type VoidComponent } from 'solid-js'
 import './commodities.css'
 import { TbArmchair2 } from "solid-icons/tb"
 import { FaSolidKitchenSet, FaSolidToilet } from "solid-icons/fa"
@@ -14,7 +13,7 @@ export const Level1 = (props: TooltipProps) => {
     <Tooltip
       open={props.isOpened}
       hoverableContent={false}
-      placement="right"
+      placement={props.isMobile ? "top": "right"}
       openDelay={100}
       closeOnScroll
       openOnHover={false}
